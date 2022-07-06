@@ -10,6 +10,27 @@ body {
     --primecolor: #00146e;
 }
 
+/* -----tileline for headlines */
+.tiltline::after  {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    width: 2.1875rem;
+    border-top: 0.5px solid var(--primecolor);
+    transform: translate(112%, -42px) rotate(-60deg);
+}
+.tiltline::before  {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 2.1875rem;
+    border-top: 0.5px solid var(--primecolor);
+    transform: translate(-112%, 42px) rotate(-60deg);
+}
+
+
 /* -------------header--------------- */
 header {
     display: flex;
@@ -213,6 +234,7 @@ nav a {
     color: var(--primecolor);
     font-weight: 700;
     margin-bottom: 28px;
+    letter-spacing: .04167em;
 }
 .news_card {
     width: 100%;
@@ -243,40 +265,27 @@ nav a {
 .news_card i {
     color: #0c308e;
     font-size: 18px;
+    margin-right: 14px;
 }
 /* -------------recommendspot--------------- */
 .recommendspot {
     padding: 40px 16px;
+    margin-bottom: 10px;
 }
 .recommendspot h2 {
+    text-align: center;
+    position: relative;
     font-size: 1.5rem;
     color: var(--primecolor);
     font-weight: 700;
     margin-bottom: 28px;
-    position: relative;
-    width: fit-content;
-    margin: 0px auto 76px auto;
+    padding: 10px 0px;
+    letter-spacing: .04167em;
+    margin: 0px auto 60px auto;
+    background-color: rgb(255, 255, 255);
+    
 }
-.recommendspot h2::before  {
-    content: "";
-    position: absolute;
-    display: block;
-    top: 0;
-    right: 0;
-    width: 36px;
-    border: 0.5px solid var(--primecolor);
-    transform: translate(-5px,-32px) rotate(-60deg) ;
-}
-.recommendspot h2::after  {
-    content: "";
-    position: absolute;
-    display: block;
-    bottom: 0;
-    left: 0;
-    width: 36px;
-    border: 0.5px solid var(--primecolor);
-    transform: translate(5px,32px) rotate(-60deg) ;
-}
+
 /* ---spots_wrap-- */
 .spots_wrap {
     width: 100%;
@@ -340,13 +349,10 @@ nav a {
     background-position: 50% 50%;
     background-size: cover;
     display: block;
-    height: 230px;
+    height: 210px;
     position: relative;
     width: 100%;
     margin: 0px 7px;
-}
-.spots_small,.num1 {
-    
 }
 .spots_small_wrap :last-child {
     margin-right: -0px;
@@ -373,4 +379,66 @@ nav a {
     font-size: 15px;
     font-weight: 700;
 }
+/* ---spots_wrap-- */
+.other_trial {
+    display: block;
+    text-align: center;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: var(--primecolor);
+    font-weight: 700;
+    padding: 15px 20px;
+    border: 2px solid var(--primecolor );
+    margin: 30px auto 50px auto;
+    position: relative;
+    line-height: 1.3;
+}
+.other_trial i{
+    display: block;
+    position: absolute;
+    right: 1.6rem;
+    font-size: 19px;
+    margin: auto;
+    top:16px;
+    
+}
+/* ---coupon--- */
+.coupon img {
+    width: 100%;
+}
+/* -------------Destination--------------- */
+.destination {
+    width: 100%;
+    background-color: #eef5ff;
+    padding-top: 100px;
+
+}
+.destination h2 {
+    display: block;
+    width: fit-content;
+    position: relative;
+    margin: auto;
+    margin-bottom: 4rem;
+    letter-spacing: .04167em;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.1;
+    color: #00146e;
+    padding: 10px 0px;
+}
+.destination_svg_wrap {
+    width: 100%;
+    height: 26rem;
+    margin: auto;
+    padding: 0 .9375rem 1.875rem;
+    overflow: hidden;
+
+}
+.destination_svg {
+    display: block;
+    width:100% ;
+    height: auto;
+    object-fit: cover;
+}
+
 
