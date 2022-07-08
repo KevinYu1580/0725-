@@ -8,6 +8,7 @@ body {
 
 :root {
     --primecolor: #00146e;
+    --linegray: #d8d8d8;
 }
 
 /* -----tileline for headlines */
@@ -441,15 +442,20 @@ nav a {
     object-fit: cover;
 }
 /* ---pic_row--- */
-.
 .pic_row {
     margin-top: 50px;
+}
+.pic_row .card {
+    display: block;
+    width: 80%;
+    margin: auto;
+    text-decoration: none;
 }
 .pic_row .destination_pic {
     background-image: url(images/image_area01.jpg);
     background-position: 50% 50%;
     background-size: cover;
-    width: 78%;
+    width: 100%;
     position: relative;
     border: 2px solid #fff;
     display: flex;
@@ -503,17 +509,21 @@ nav a {
     font-weight: 600;
     color: var(--primecolor);
 }
-.pic_row .info {
-    width: 70%;
-}
-.pic_row .card {
-    text-decoration: none;
+.pic_row .card .info {
     margin-top: 0.625rem;
     font-size: .875rem;
     line-height: 1.4;
     color: #444;
 }
-.
-.bottom_info i {
-    
+.pic_row .card .info p{
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid var(--linegray);
+    color: #066dc4
+}
+.pic_row .card .info p i{
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid var(--linegray);
+    color: #066dc4
 }
