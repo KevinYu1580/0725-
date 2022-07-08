@@ -441,6 +441,7 @@ nav a {
     object-fit: cover;
 }
 /* ---pic_row--- */
+.
 .pic_row {
     margin-top: 50px;
 }
@@ -501,4 +502,18 @@ nav a {
     font-size: 16px;
     font-weight: 600;
     color: var(--primecolor);
+}
+.pic_row .info {
+    width: 70%;
+}
+.pic_row .card {
+    text-decoration: none;
+    margin-top: 0.625rem;
+    font-size: .875rem;
+    line-height: 1.4;
+    color: #444;
+}
+.
+.bottom_info i {
+    
 }
