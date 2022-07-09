@@ -3,7 +3,6 @@ body {
     /* outline: 1px solid #000; */
     font-family: 'Noto Sans TC', sans-serif;
     color: #444;
-
 }
 
 :root {
@@ -12,6 +11,18 @@ body {
 }
 
 /* -----tileline for headlines */
+.tiltline {
+    position: relative;
+    margin-bottom: 1.875rem;
+    padding: 46px 0;
+    text-align: center;
+    letter-spacing: .04167em;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.1;
+    color: #00146e;
+}
+
 .tiltline::after {
     content: "";
     position: absolute;
@@ -158,7 +169,7 @@ nav a {
 }
 
 /* ---controlpannel--- */
-.control {
+.coverpics .control {
     background-color: #fff;
     padding: 2.1875rem 1.25rem 1.25rem 1.625rem;
     width: 76.2%;
@@ -298,20 +309,6 @@ nav a {
     margin-bottom: 10px;
 }
 
-.recommendspot h2 {
-    text-align: center;
-    position: relative;
-    font-size: 1.5rem;
-    color: var(--primecolor);
-    font-weight: 700;
-    margin-bottom: 28px;
-    padding: 46px 0px;
-    letter-spacing: .04167em;
-    margin: 0px auto 24px auto;
-    background-color: rgb(255, 255, 255);
-
-}
-
 /* ---spots_wrap-- */
 .spots_wrap {
     width: 100%;
@@ -418,10 +415,9 @@ nav a {
 }
 
 /* ---spots_wrap-- */
-.other_trial {
+.link_btn {
     display: block;
     text-align: center;
-    padding: 15px 20px;
     text-decoration: none;
     color: var(--primecolor);
     font-weight: 700;
@@ -430,16 +426,17 @@ nav a {
     margin: 30px auto 50px auto;
     position: relative;
     line-height: 1.3;
+    width: 100%;
+    max-width: 25rem;
 }
 
-.other_trial i {
+.link_btn i {
     display: block;
     position: absolute;
     right: 1.6rem;
     font-size: 19px;
     margin: auto;
     top: 16px;
-
 }
 
 /* ---coupon--- */
@@ -455,19 +452,6 @@ nav a {
 
 }
 
-.destination h2 {
-    display: block;
-    position: relative;
-    margin: auto;
-    margin-bottom: 1.5rem;
-    text-align: center;
-    letter-spacing: .04167em;
-    font-size: 1.5rem;
-    font-weight: 700;
-    line-height: 1.1;
-    color: #00146e;
-    padding: 46px 0px;
-}
 
 .destination_svg_wrap {
     width: 100%;
@@ -488,14 +472,15 @@ nav a {
 /* ---pic_row--- */
 .pic_row {
     margin-top: 50px;
-    padding-bottom: 60px;
+    padding-bottom: 70px;
 }
 
 .pic_row .card {
     display: block;
     width: 80%;
-    margin: auto;
+    margin: 16px auto;
     text-decoration: none;
+    background-color: #eef5ff;
 }
 
 .pic_row .destination_pic {
@@ -580,76 +565,158 @@ nav a {
     color: #066dc4;
 }
 
-/* -------------Destination--------------- */
+/* -------------ispiration--------------- */
 .inspiration {
     background-color: rgb(255, 255, 255);
     margin-top: 50px;
-}
-
-.inspiration h2 {
-    position: relative;
-    margin-bottom: 1.875rem;
-    padding: 2.5rem 0;
-    text-align: center;
-    letter-spacing: .04167em;
-    font-size: 1.5rem;
-    font-weight: 700;
-    line-height: 1.1;
-    color: #00146e;
+    margin-bottom: 60px;
 }
 
 .inspiration .card_wrap {
     width: 100%;
     height: fit-content;
     padding: 0px 15px;
+
+}
+/* -----card----- */
+.inspiration .card_wrap .card {
+    width: 100%;
+    height: fit-content;
+    display: block;
+    background-color: #eef5ff;
+    text-decoration: none;
+    margin-bottom: 30px;
 }
 
-..inspiration .card_wrap .card {
-    width: 100%;
-    background-color: #fff;
-    position: relative;
-}
-.inspiration .card_wrap .card .img {
-    width: 100%;
-    height: 12.5rem;
+.inspiration .card .img_wrap {
     position: relative;
     overflow: hidden;
 }
-
-.inspiration .card_wrap .card .ani {
+.inspiration .card img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;    
+    transition: .6s ease-in-out;
+    transform: scale(1);
+    
+}
+.img_wrap .title {
+    display: flex;
+    align-items: flex-end;
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(to bottom, #00000000, #000000d7), url(images/image_interest-group.jpg);
-    background-size: cover;
-    transition: 0.5s ease-in-out;
-}
-
-.inspiration .card_wrap .card .ani:hover {
-    transform: scale(1.1);
-}
-
-
-.inspiration .card_wrap .subtitle {
-    position: absolute;
-    bottom: 17px;
-    left: 17px;
+    padding: 0 3.75rem 1.0625rem 1.0625rem;
     font-size: 1.875rem;
     font-weight: 500;
+    line-height: 1.1;
+    background-image: linear-gradient(180deg,rgba(0,0,0,0) 0%,rgba(0,0,0,.8) 100%);
     color: #fff;
 }
-
-.inspiration .round_nav_btn_right {
-    right: 14px;
-    bottom: 43px;
-    transform: translateX(0%);
-}
-
-.inspiration .card_wrap .card {
-    background-color: #EEF5FF;
-    position: relative;
-    margin-bottom: 30px;
-}
-.inspiration .card_wrap .card p {
-    padding: 1.6rem 0.9375rem;
+.inspiration .card_wrap .card .info{
+    padding: 1.375rem 0.9375rem 1.375rem 0.9375rem;
+    font-size: 1rem;
+    color: #444;
     font-size: .875rem;
+    line-height: 1.6;
+    position: relative;
 }
+.inspiration .round_nav_btn_right {
+    transform: translate(0);
+    right: 14px;
+    top: -22px;
+}
+/* -------------ispiration--------------- */
+.propa {
+    position: relative ;
+    margin-bottom: 7rem;
+}
+.propa img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.propa .control {
+    width: 66.6%;
+    background: url(images/icon_season.svg) no-repeat 1.875rem 1.875rem, #fff;
+    background-size: 10.125rem auto;
+    padding: 4.375rem 1.25rem 0 1.875rem;
+    position: absolute;
+    bottom: 0;
+}
+.propa .control h3 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 1.38;
+    color: var(--primecolor);
+}
+.propa .check_wrap {
+    position: relative;
+    margin-top: 20px;
+    display: block;
+    background-color: var(--primecolor) ;
+    text-decoration: none;
+    background-color: #0c308e;
+    color: #fff; 
+    width: calc(100% - 3.625rem);
+    text-align: center ;
+    padding: 1rem 0;
+    font-size: .875rem;
+    margin-right: auto;
+}
+.propa .check_wrap i {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translate(0, -43%);
+    margin: auto;
+    font-size: 12px;
+}
+.propa .control .pause {
+    position: absolute;
+    bottom: 0;
+    right: 1.25rem;
+}
+
+/* -------------special--------------- */
+
+.special .card_wrap {
+    height: fit-content;
+    margin: 0px -2px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.special .card {
+    width: 50%;
+    height: fit-content;
+    margin-bottom: 30px;
+    padding: 0px 2px;
+}
+.special .card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.special .card .img_wrap {
+    width: 100%;
+    height: 9.125rem;
+}
+.special .card h4 {
+    font-size: .9375rem;
+    font-weight: 700;
+    line-height: 1.3;
+    color: #00146e;
+}
+.special .card i {
+    overflow-wrap: break-word;
+    font-size: .8125rem;
+    line-height: 1.38;
+    color: #066dc4;
+    margin-top: 10px;
+}
+.special .card .info_wrap {
+    padding: 15px 15px 0px 15px;
+}
+
