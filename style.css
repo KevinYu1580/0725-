@@ -9,6 +9,9 @@ body {
     --primecolor: #00146e;
     --linegray: #d8d8d8;
 }
+a {
+    text-decoration: none;
+}
 
 /* -----tileline for headlines */
 .tiltline {
@@ -73,7 +76,6 @@ header {
     line-height: 1.18182;
     font-family: 'Noto Sans TC', sans-serif;
     align-items: center;
-    text-decoration: none;
 }
 
 .rightimg i {
@@ -133,7 +135,6 @@ nav h2 {
 }
 
 nav a {
-    text-decoration: none;
     display: flex;
     width: 33.333333%;
     align-items: center;
@@ -268,7 +269,6 @@ nav a {
 
 .news_card {
     width: 100%;
-    text-decoration: none;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -280,7 +280,6 @@ nav a {
 
 .contents .date_announce {
     margin-bottom: 8px;
-    text-decoration: none;
 }
 
 .latest_news .contents p {
@@ -418,7 +417,6 @@ nav a {
 .link_btn {
     display: block;
     text-align: center;
-    text-decoration: none;
     color: var(--primecolor);
     font-weight: 700;
     padding: 15px 20px;
@@ -479,7 +477,6 @@ nav a {
     display: block;
     width: 80%;
     margin: 16px auto;
-    text-decoration: none;
     background-color: #eef5ff;
 }
 
@@ -584,7 +581,6 @@ nav a {
     height: fit-content;
     display: block;
     background-color: #eef5ff;
-    text-decoration: none;
     margin-bottom: 30px;
 }
 
@@ -657,7 +653,6 @@ nav a {
     margin-top: 20px;
     display: block;
     background-color: var(--primecolor) ;
-    text-decoration: none;
     background-color: #0c308e;
     color: #fff; 
     width: calc(100% - 3.625rem);
@@ -719,4 +714,39 @@ nav a {
 .special .card .info_wrap {
     padding: 15px 15px 0px 15px;
 }
+.btn_container {
+    width: 100%;
+    margin: 0px 16px;
+}
+/* -------------flight_search--------------- */
+.flight_search {
+    width: 100%;
+    padding-top: 325px;
+    background-image: linear-gradient(to bottom, #ffffff00 35%, #4d9fdd 45%), url(images/bg_footer01_sp.webp), url(images/bg_footer02.webp);
+    background-position: center center, top center,top 1.5625rem right 0.9375rem;
+    background-size: auto, auto,16.25rem;
+    background-repeat: no-repeat,no-repeat;
+}
+.flight_search .btn {
+    display: block;
+    background-color: #d54100;
+    margin: 0px 16px;
+    text-align: center;
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: #fff;
+    padding: 22px 0px;
+    line-height: 1.3;
+    margin-bottom: 42px;
+}
+.flight_search .btn i{
+    margin-right: 16px;
+    font-size: 1.5rem;
+}
+.flight_search .banner img{
+    width: 100%;
+}
+/* -------------footer--------------- */
+
+
 
