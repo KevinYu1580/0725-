@@ -835,6 +835,7 @@ footer .col .title i {
 /* ---travel planner */
 .travelplanner {
     padding: 40px 15px 30px 15px;
+    text-align: center;;
 }
 .travelplanner img {
     margin-bottom: 30px;
@@ -851,6 +852,8 @@ footer .col .title i {
     display: flex;
     width: 210px;
     justify-content:space-between;
+    margin-bottom: 35px;
+    margin: auto;
 }
 .travelplanner .selection a::before{
     content: "";
@@ -862,6 +865,10 @@ footer .col .title i {
     height: 4px;
     border-bottom: 2px solid #98a1c9;
 }
+.tiltline_small {
+    transform: translateY(4px);
+}
+
 
 
 
