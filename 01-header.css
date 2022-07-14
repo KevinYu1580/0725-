@@ -2,6 +2,19 @@ header {
     display: flex;
     justify-content: space-between;
     padding: 12px 15px;
+    background-color: #fff;
+    
+}
+@media screen and (min-width: 64em){
+    header {
+        padding: 12px 25px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.205);
+        z-index: 100;
+        background-color: #fff;
+        position: fixed;
+        width: 100%;
+        top: 0;
+    }
 }
 
 .leftimg {
@@ -16,8 +29,8 @@ header {
     padding-left: 15px;
 }
 .leftimg :nth-child(3) {
-    width: 9rem;
-    padding-left: 15px;
+    width: 164px;
+    padding-left: 20px;
 }
 @media screen and (min-width: 64em){
 .leftimg :nth-child(1){
@@ -32,8 +45,12 @@ header {
         display: none;
     }
 }
+header .link_wrap {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 
-
+}
 
 .rightimg {
     display: flex;
@@ -45,10 +62,38 @@ header {
     font-family: 'Noto Sans TC', sans-serif;
     align-items: center;
 }
+@media screen and (min-width: 64em){
+    .rightimg {
+        font-size: 1rem;
+        margin-left: 33px;
+    }
+}
 
 .rightimg i {
     font-size: 15px;
     margin-right: 6px;
 }
+@media screen and (min-width: 64em){
+    .rightimg i {
+        font-size: 20px;
+        margin-right: 8px;
+    }
+}
+header .search_btn {
+    padding: 13px 29px 16px 29px;
+    background-color: #d54100;
+    color: #fff;
+    margin-left: 36px;
+    font-size: .9375rem
+}
+header .search_icon {
+    font-size: 20px;
+}
 
-
+@media screen and (max-width: 64em){
+    header .search_btn, header .search_icon {
+        display: none;
+        margin-left: 36px;
+    }
+    
+}

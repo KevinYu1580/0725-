@@ -7,14 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="body.css">
     <link rel="stylesheet" href="Font-awesome/css/all.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap"
         rel="stylesheet">
 
-<!--css link  -->
+    <!--css link  -->
     <link rel="stylesheet" href="./01-header.css">
     <link rel="stylesheet" href="./02-bulletin.css">
     <link rel="stylesheet" href="./03-topnav.css">
@@ -31,7 +31,7 @@
 
 
 
-</head> 
+</head>
 
 <body>
     <!------------------header------------------>
@@ -41,11 +41,18 @@
             <img src="images/text_jtp_sp.svg" alt="">
             <img src="images/text_jtp_pc.svg" alt="">
         </a>
-        <a class="rightimg" href="">
-            <i class="fa-solid fa-globe"></i>
-            <span>Taiwan</span>
-        </a>
-        
+
+        <div class="link_wrap">
+            <i class="search_icon fa-solid fa-magnifying-glass"></i>
+            <a class="rightimg" href="">
+                <i class="fa-solid fa-globe"></i>
+                <span>Taiwan</span>
+            </a>
+            <div class="search_btn">
+                搜尋航班
+            </div>
+        </div>
+
     </header>
     <!------------------bulltin------------------>
     <div class="bulltin">
@@ -54,7 +61,7 @@
         </a>
     </div>
     <!------------------topnav------------------>
-    <nav class="top_nav">
+    <nav class="top_nav_mb">
         <a href="">
             <i class="fa-solid fa-bars "></i>
             <h2>選單</h2>
@@ -68,6 +75,36 @@
             <h2>搜尋航班</h2>
         </a>
     </nav>
+
+    <nav class="top_nav_pc">
+
+        <ul class="click_wrap">
+            <li>
+                <a href="">推薦景點</a>
+            </li>
+            <li>
+                <a href="">旅遊尋找靈感
+                    <i class="fa-solid fa-angle-down"></i>
+                </a>
+            </li>
+            <li>
+                <a href="">目的地
+                    <i class="fa-solid fa-angle-down"></i>
+                </a>
+            </li>
+            <li>
+                <a href="">旅遊資訊</a>
+            </li>
+            <li>
+                <a href="">ANA服務</a>
+            </li>
+        </ul>
+        <a class="must_go" href="">
+            <img src="images/bookmark-one-filled.svg" alt="">
+            <h2>必去景點</h2>
+        </a>
+    </nav>
+
     <!------------------coverpics------------------>
     <section class="coverpics">
         <div class="coverpics_mainpic">

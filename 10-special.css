@@ -1,0 +1,50 @@
+/* -------------special--------------- */
+
+.special .card_wrap {
+    height: fit-content;
+    margin: 0px -2px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.special .card {
+    width: 50%;
+    height: fit-content;
+    margin-bottom: 30px;
+    padding: 0px 2px;
+}
+
+.special .card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.special .card .img_wrap {
+    width: 100%;
+    height: 9.125rem;
+}
+
+.special .card h4 {
+    font-size: .9375rem;
+    font-weight: 700;
+    line-height: 1.3;
+    color: #00146e;
+}
+
+.special .card i {
+    overflow-wrap: break-word;
+    font-size: .8125rem;
+    line-height: 1.38;
+    color: #066dc4;
+    margin-top: 10px;
+}
+
+.special .card .info_wrap {
+    padding: 15px 15px 0px 15px;
+}
+
+.btn_container {
+    width: 100%;
+    margin: 0px 16px;
+}

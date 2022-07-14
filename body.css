@@ -1,0 +1,87 @@
+body {
+    font-family: 'Noto Sans TC', sans-serif;
+    color: #444;
+    position: relative;
+}
+
+
+:root {
+    --primecolor: #00146e;
+    --linegray: #d8d8d8;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* RWD size
+1024
+768
+375
+*/
+
+/* -----tileline for headlines */
+
+.tiltline {
+    position: relative;
+    margin-bottom: 1.875rem;
+    padding: 46px 0;
+    text-align: center;
+    letter-spacing: .04167em;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.1;
+    color: #00146e;
+}
+
+.tiltline::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    width: 2.1875rem;
+    border-top: 0.5px solid var(--primecolor);
+    transform: translate(112%, -42px) rotate(-60deg);
+}
+
+.tiltline::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 2.1875rem;
+    border-top: 0.5px solid var(--primecolor);
+    transform: translate(-112%, 42px) rotate(-60deg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

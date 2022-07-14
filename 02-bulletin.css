@@ -4,6 +4,7 @@
     padding: 14px 0px;
 }
 
+
 .bulltin a {
     display: block;
     width: fit-content;
@@ -11,5 +12,17 @@
     font-weight: 400;
     margin: auto;
     color: rgb(44, 44, 44);
+    text-decoration:underline;
 
+}
+@media screen and (min-width: 64em){
+    .bulltin {
+        margin-top: 70px;
+        border-top: 1px solid #d8d8d8;
+        height: 3.125rem;
+        font-size: 1.5rem;
+    }
+    .bulltin a {
+        font-size:1rem;
+    }
 }

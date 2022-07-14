@@ -1,0 +1,56 @@
+/* -------------propa-------------- */
+.propa {
+    position: relative;
+    margin-bottom: 7rem;
+}
+
+.propa img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.propa .control {
+    width: 66.6%;
+    background: url(images/icon_season.svg) no-repeat 1.875rem 1.875rem, #fff;
+    background-size: 10.125rem auto;
+    padding: 4.375rem 1.25rem 0 1.875rem;
+    position: absolute;
+    bottom: 0;
+}
+
+.propa .control h3 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 1.38;
+    color: var(--primecolor);
+}
+
+.propa .check_wrap {
+    position: relative;
+    margin-top: 20px;
+    display: block;
+    background-color: var(--primecolor);
+    background-color: #0c308e;
+    color: #fff;
+    width: calc(100% - 3.625rem);
+    text-align: center;
+    padding: 1rem 0;
+    font-size: .875rem;
+    margin-right: auto;
+}
+
+.propa .check_wrap i {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translate(0, -43%);
+    margin: auto;
+    font-size: 12px;
+}
+
+.propa .control .pause {
+    position: absolute;
+    bottom: 0;
+    right: 1.25rem;
+}

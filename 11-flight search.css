@@ -1,0 +1,31 @@
+/* -------------flight_search--------------- */
+.flight_search {
+    width: 100%;
+    padding-top: 325px;
+    background-image: linear-gradient(to bottom, #ffffff00 35%, #4d9fdd 45%), url(images/bg_footer01_sp.webp), url(images/bg_footer02.webp);
+    background-position: center center, top center, top 1.5625rem right 0.9375rem;
+    background-size: auto, auto, 16.25rem;
+    background-repeat: no-repeat, no-repeat;
+}
+
+.flight_search .btn {
+    display: block;
+    background-color: #d54100;
+    margin: 0px 16px;
+    text-align: center;
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: #fff;
+    padding: 22px 0px;
+    line-height: 1.3;
+    margin-bottom: 42px;
+}
+
+.flight_search .btn i {
+    margin-right: 16px;
+    font-size: 1.5rem;
+}
+
+.flight_search .banner img {
+    width: 100%;
+}

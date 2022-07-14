@@ -1,0 +1,108 @@
+/* -------------coverpics--------------- */
+.coverpics {
+    position: relative;
+    width: 100%;
+    height: 560px;
+    background-color: var(--primecolor);
+    overflow: hidden;
+}
+
+.coverpics_mainpic {
+    width: 100%;
+    height: 460px;
+    background-image: linear-gradient(to bottom, rgba(204, 204, 204, 0)68%, #00146e 88%, #00146e), url(images/zh_tw_hero_sp2.jpg);
+    background-size: cover;
+    background-position: 50% 0%;
+
+}
+
+.coverpics_mainpic img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+
+}
+
+/* ---controlpannel--- */
+.coverpics .control {
+    background-color: #fff;
+    padding: 2.1875rem 1.25rem 1.25rem 1.625rem;
+    width: 76.2%;
+    height: auto;
+    position: absolute;
+    bottom: 48px;
+}
+
+.control img {
+    width: 220px;
+    margin-bottom: 1.7rem;
+}
+
+.control_text {
+    width: 100%;
+    margin-bottom: 0.6rem;
+    letter-spacing: .02375rem;
+    font-size: .9375rem;
+    line-height: 1.2;
+    color: #172b8c;
+    font-weight: 700;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+.controlbar {
+    display: flex;
+    text-align: center;
+}
+
+.dot_wrap {
+    display: flex;
+    height: fit-content;
+    margin: auto 0 0 0;
+
+}
+
+.control_dot {
+    background-color: #ced2e3;
+    width: 0.75rem;
+    height: 0.75rem;
+    border-radius: 100%;
+    margin-right: 15px;
+}
+
+.dot_wrap :nth-child(2) {
+    background-color: #37478d;
+}
+
+.pause {
+    width: 2.375rem;
+    height: 2.375rem;
+    border-radius: 50%;
+    border: 0.0625rem solid #c9d1f1;
+    display: flex;
+    margin-left: auto;
+}
+
+.pause i {
+    margin: auto;
+}
+
+/* ---scroll--- */
+.scroll_hint p {
+    color: rgb(255, 255, 255);
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 0.86rem;
+    letter-spacing: .02375rem;
+    writing-mode: vertical-rl;
+    position: absolute;
+    right: 10%;
+    bottom: 5.625rem;
+}
+
+.line {
+    background-color: rgb(255, 255, 255);
+    width: 1px;
+    height: 84px;
+    position: absolute;
+    bottom: 0;
+    right: 11.5%;
+}
