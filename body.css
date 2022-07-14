@@ -2,6 +2,7 @@ body {
     font-family: 'Noto Sans TC', sans-serif;
     color: #444;
     position: relative;
+    outline: 1px solid #f20;
 }
 
 
