@@ -1,10 +1,14 @@
 /* -------------special--------------- */
+.special {
+    overflow: hidden;
+}
 
 .special .card_wrap {
     height: fit-content;
-    margin: 0px -2px;
     display: flex;
     flex-wrap: wrap;
+    margin-right: -0.09375rem;
+    margin-left: -0.09375rem;
 }
 
 .special .card {

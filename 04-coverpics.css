@@ -1,10 +1,17 @@
 /* -------------coverpics--------------- */
 .coverpics {
     position: relative;
-    width: 100%;
     height: 560px;
     background-color: var(--primecolor);
-    overflow: hidden;
+
+}
+
+@media screen and (min-width: 64em) {
+    .coverpics {
+        height: 760px;
+        background-color: none;
+        background-image: linear-gradient(to bottom, #00146e 92.5%, #fff 80%)
+    }
 }
 
 .coverpics_mainpic {
@@ -13,8 +20,18 @@
     background-image: linear-gradient(to bottom, rgba(204, 204, 204, 0)68%, #00146e 88%, #00146e), url(images/zh_tw_hero_sp2.jpg);
     background-size: cover;
     background-position: 50% 0%;
-
 }
+
+@media screen and (min-width: 64em) {
+    .coverpics_mainpic {
+        width: calc(100% - 80px - 80px);
+        margin: auto;
+        height: 759px;
+        background-image: url(images/zh_tw_hero_pc2.jpg);
+        background-position: 50% 50%;
+    }
+}
+
 
 .coverpics_mainpic img {
     height: 100%;
@@ -33,20 +50,43 @@
     bottom: 48px;
 }
 
+@media screen and (min-width: 768px) {
+    .coverpics .control {
+        padding: 3.75rem 3.75rem 3.5rem 4.375rem;
+        bottom: 56px;
+        width: 30.0625rem;
+
+    }
+}
+
 .control img {
     width: 220px;
-    margin-bottom: 1.7rem;
+    margin-bottom: 1.8rem;
+}
+
+@media screen and (min-width: 64em) {
+    .control img {
+        width: 350px;
+        margin-bottom: 3.125rem;
+    }
 }
 
 .control_text {
     width: 100%;
-    margin-bottom: 0.6rem;
+    margin-bottom: 2rem;
     letter-spacing: .02375rem;
     font-size: .9375rem;
     line-height: 1.2;
     color: #172b8c;
     font-weight: 700;
     font-family: 'Noto Sans TC', sans-serif;
+}
+
+@media screen and (min-width: 64em) {
+    .control_text {
+        font-size: 1.5625rem;
+        margin-bottom: 1.4375rem;
+    }
 }
 
 .controlbar {
@@ -80,29 +120,46 @@
     border: 0.0625rem solid #c9d1f1;
     display: flex;
     margin-left: auto;
+    position: absolute;
+    right: 1.25rem;
+    bottom: 1.25rem;
 }
 
 .pause i {
     margin: auto;
 }
 
+@media screen and (min-width: 64em) {
+    .pause {
+        width: 3rem;
+        height: 3rem;
+    }
+}
+
 /* ---scroll--- */
+.scroll_hint {
+    width: fit-content;
+    height: fit-content;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    right:10%;
+    bottom: 0 ;
+    
+}
 .scroll_hint p {
     color: rgb(255, 255, 255);
     font-family: 'Noto Sans TC', sans-serif;
-    font-size: 0.86rem;
-    letter-spacing: .02375rem;
+    font-size: 0.84rem;
+    letter-spacing: .04rem;
     writing-mode: vertical-rl;
-    position: absolute;
-    right: 10%;
-    bottom: 5.625rem;
+    
 }
 
 .line {
     background-color: rgb(255, 255, 255);
     width: 1px;
     height: 84px;
-    position: absolute;
-    bottom: 0;
-    right: 11.5%;
+    margin-top: 6px;
 }
