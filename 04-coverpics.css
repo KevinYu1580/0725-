@@ -146,15 +146,19 @@
     align-items: center;
     right:10%;
     bottom: 0 ;
-    
 }
+@media screen and (min-width: 64em){
+    .scroll_hint {
+        right: 34px;
+    }
+}
+
 .scroll_hint p {
     color: rgb(255, 255, 255);
     font-family: 'Noto Sans TC', sans-serif;
     font-size: 0.84rem;
     letter-spacing: .04rem;
     writing-mode: vertical-rl;
-    
 }
 
 .line {
@@ -162,4 +166,23 @@
     width: 1px;
     height: 84px;
     margin-top: 6px;
+}
+@media screen and (min-width: 64em){
+    .line {
+        background-image: linear-gradient(to bottom,#fff 45%, #000 10%);
+        height: 120px;
+        margin-top: 8px;
+        transform: translateY(8px);
+    }
+}
+    .line::after {
+        content: '';
+        display: block;
+        width: 8px;
+        height: 1px;
+        background-color: #000;
+        position: absolute;
+        bottom: 0;
+        transform: rotate(-40deg);
+        transform-origin: 0px 0px;
 }
