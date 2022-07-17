@@ -9,7 +9,7 @@
         border: 1px solid var(--linegray);
         padding: 12px 30px;
         width: calc(100% - 80px - 80px);
-        margin: 80px auto; 
+        margin: 80px auto 88px auto; 
         display: flex;
     }
 }

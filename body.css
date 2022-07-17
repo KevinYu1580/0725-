@@ -3,7 +3,6 @@ body {
     font-family: 'Noto Sans TC', sans-serif;
     color: #444;
     position: relative;
-
 }
 
 
@@ -35,6 +34,13 @@ a {
     line-height: 1.1;
     color: #00146e;
 }
+@media screen and (min-width: 64em){
+    .tiltline {
+        font-size: 2rem;
+        padding: 50px 0;
+        margin-bottom: 60px;
+}
+}
 
 .tiltline::after {
     content: "";
@@ -55,7 +61,17 @@ a {
     border-top: 0.5px solid var(--primecolor);
     transform: translate(-112%, 42px) rotate(-60deg);
 }
-
+@media screen and (min-width: 64em){
+    .tiltline::before, .tiltline::after {
+        width: 3.125rem;
+    }
+    .tiltline::before {
+        transform: translate(-86%, 48px) rotate(-60deg);
+    }
+    .tiltline::after {
+        transform: translate(84%, -48px) rotate(-60deg);
+    }
+}
 
 
 

@@ -13,6 +13,11 @@
         background-image: linear-gradient(to bottom, #00146e 92.5%, #fff 80%)
     }
 }
+@media screen and (min-width: 1238px){
+    .coverpics {
+        width: 100%;
+    } 
+}
 
 .coverpics_mainpic {
     width: 100%;

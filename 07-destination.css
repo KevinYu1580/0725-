@@ -3,8 +3,36 @@
     width: 100%;
     background-color: #eef5ff;
     padding-top: 54px;
-
+    position: relative;
 }
+@media screen and (min-width: 64rem){
+    .destination {
+        padding: 80px 80px 0px 80px;
+        
+        background-image: linear-gradient(to bottom,#eef5ff 58%, rgba(249, 249, 249, 0)0), linear-gradient(to left,#eef5ff 51.5%, rgb(255, 255, 255)0)
+            ;
+        
+        
+        
+    }
+    
+    .destination_container {
+        margin: auto;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        max-width: 1440px;
+        padding-left: 190px;
+    }
+}
+
+@media screen and (min-width: 64em){
+    .destination h2 {
+        margin-bottom: 0;
+    }
+}
+
+
 
 
 .destination_svg_wrap {
@@ -13,7 +41,12 @@
     margin: auto;
     padding: 0 .9375rem 1.875rem;
     overflow: hidden;
-
+}
+@media screen and (min-width: 64rem){
+    .destination_svg_wrap {
+        order: 1;
+        width: 50%;
+    }
 }
 
 .destination_svg {
@@ -28,12 +61,24 @@
     margin-top: 50px;
     padding-bottom: 70px;
 }
+@media screen and (min-width: 64em){
+    .pic_row {
+        width: 35.3%;
+    }
+}
 
 .pic_row .card {
     display: block;
     width: 80%;
     margin: 16px auto;
     background-color: #eef5ff;
+}
+@media screen and (min-width: 64em){
+    .pic_row .card {
+        margin: 0;
+        width: 100%;
+        background-color: #eef5ff00;
+    }
 }
 
 .pic_row .destination_pic {
@@ -49,6 +94,11 @@
     margin: auto;
     aspect-ratio: 16/11;
     box-shadow: 0px 0px 8px rgb(105, 105, 105);
+}
+@media screen and (min-width: 64em){
+    .pic_row .destination_pic {
+        aspect-ratio: 16/10.5;
+    }
 }
 
 .pic_row .destination_pic h4 {
@@ -75,6 +125,7 @@
     box-shadow: 0 0.128rem 0.4rem rgba(0, 0, 0, 0.308);
 }
 
+
 .round_nav_btn_left i {
     font-size: 16px;
     font-weight: 600;
@@ -98,12 +149,26 @@
     font-weight: 600;
     color: var(--primecolor);
 }
+@media screen and (min-width: 64em){
+    .round_nav_btn_left, .round_nav_btn_right {
+        width: 60px;
+        height: 60px;
+    }
+    
+}
 
 .pic_row .card .info {
     margin-top: 0.625rem;
     font-size: .875rem;
     line-height: 1.4;
     color: #444;
+}
+@media screen and (min-width: 64em){
+    .pic_row .card .info {
+        font-size: 1rem;
+        text-align: justify;
+        line-height: 1.6;
+    }
 }
 
 .pic_row .card .info p {
@@ -116,5 +181,20 @@
 .pic_row .card i {
     text-align: center;
     color: #066dc4;
+}
+@media screen and (min-width: 64em){
+    .pic_row .card i {
+        font-size: 16px;
+    }
+}
+.background_mask::after {
+    content: '';
+    position: absolute;
+    width: 48.5%;
+    height: 45%;
+    background-color: #fff;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
 }
 

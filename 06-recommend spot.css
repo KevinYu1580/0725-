@@ -5,9 +5,18 @@
 }
 @media screen and (min-width: 64em){
     .recommendspot {
-        width: 1280px;
+        max-width: 1280px;
         margin: 0px auto 40px auto;
-        padding: 0px 80px;
+    }
+}
+@media screen and (max-width: 1440px){
+    .recommendspot {
+    padding: 0px 80px;
+    }
+}
+@media screen and (max-width: 768px){
+    .recommendspot {
+    padding: 0px;
     }
 }
 
@@ -16,8 +25,15 @@
     width: 100%;
 }
 @media screen and (min-width: 64em){
+    .spots_wrap {
+        width: 100%;
+
+    }
+}
+@media screen and (min-width: 64em){
     .spots_container {
         display:flex ;
+        width: 100%;
     }
 }
 
@@ -41,7 +57,6 @@
 }
 @media screen and (min-width: 64em){
     .spots_large {
-        width: 529px;
         height: 100%;
         margin-right: 10px;
         margin-bottom: 0px;
@@ -52,6 +67,12 @@
     width: 100%;
     position: relative;
 }
+@media screen and (min-width: 64em){
+    .spots_large_wrap {
+        width:136%;
+    }
+}
+
 
 
 .rank_deco {
@@ -94,6 +115,8 @@
         flex-direction: column;
         justify-content:space-between;
         row-gap:0;
+
+
     }
 }
 
@@ -148,7 +171,12 @@
     width: 100%;
     max-width: 25rem;
 }
-
+@media screen and (min-width: 64em){
+    .link_btn {
+        margin:60px auto 120px auto ;
+        font-size: 1.125rem;
+    }
+}
 .link_btn i {
     display: block;
     position: absolute;
@@ -170,7 +198,7 @@
 .coupon_pc {
     width: auto;
     height: auto;
-    margin-left: 50px;
+    margin-left: 52px;
 }
 @media screen and (max-width: 64em){
     .coupon_pc {
