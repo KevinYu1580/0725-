@@ -8,9 +8,9 @@
 @media screen and (min-width: 64rem){
     .destination {
         padding: 80px 80px 0px 80px;
+        background-image: linear-gradient(to bottom,#eef5ff 58%, rgba(249, 249, 249, 0)0), linear-gradient(to left,#eef5ff 51.5%, rgb(255, 255, 255)0);
+        margin-bottom: 120px;
         
-        background-image: linear-gradient(to bottom,#eef5ff 58%, rgba(249, 249, 249, 0)0), linear-gradient(to left,#eef5ff 51.5%, rgb(255, 255, 255)0)
-            ;
         
         
         
@@ -45,7 +45,9 @@
 @media screen and (min-width: 64rem){
     .destination_svg_wrap {
         order: 1;
-        width: 50%;
+        width: 48%;
+        margin-left: 120px;
+        
     }
 }
 
