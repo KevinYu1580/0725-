@@ -3,12 +3,34 @@
     position: relative;
     margin-bottom: 7rem;
 }
-
-.propa img {
+.propa .wrap {
     width: 100%;
-    height: auto;
+}
+@media screen and (min-width: 64em){
+    .propa .wrap {
+        max-width: 1280px;
+        height: 514px;
+        margin: auto;
+    }
+}
+
+.propa #pic1, .propa #pic2  {
+    width: 100%;
+    height: 100%;
     object-fit: cover;
 }
+@media screen and (min-width: 768px){
+    .propa #pic1 {
+        display: none;
+    }
+}
+@media screen and (max-width: 768px){
+    .propa #pic2 {
+        display: none;
+        height: 100px;
+    }
+}
+
 
 .propa .control {
     width: 66.6%;
@@ -18,12 +40,28 @@
     position: absolute;
     bottom: 0;
 }
+@media screen and (min-width: 64em){
+    .propa .control {
+    width: 400px;
+    height: 265px;
+    padding: 8.75rem 20px 0 40px;
+    background-size: 15.5rem auto;
+    background: url(images/icon_season.svg) no-repeat 2.6rem 4.4rem, #fff;
+    }
+}
 
 .propa .control h3 {
     font-size: 1.25rem;
     font-weight: 700;
     line-height: 1.38;
     color: var(--primecolor);
+    margin-right: 50px;
+}
+@media screen and (min-width: 64em){
+    .propa .control h3 {
+        font-size: 1.75rem;
+        margin-right: 0px;
+    }
 }
 
 .propa .check_wrap {
@@ -39,6 +77,16 @@
     font-size: .875rem;
     margin-right: auto;
 }
+@media screen and (min-width: 64em){
+    .propa .check_wrap {
+        margin-top: auto;
+        width: 245px;
+        position: absolute;
+        bottom: 0;
+        font-size: 1.125rem;
+        padding: 18px 30px 18px 10px  ;
+    }
+}
 
 .propa .check_wrap i {
     position: absolute;
@@ -48,9 +96,23 @@
     margin: auto;
     font-size: 12px;
 }
+@media screen and (min-width: 64em){
+    .propa .check_wrap i {
+        font-size: 18px;
+        right: 16px;
+    }
+}
+
 
 .propa .control .pause {
     position: absolute;
     bottom: 0;
     right: 1.25rem;
+}
+
+@media screen and (min-width: 64em){
+    .propa .control .pause {
+        width: 40px;
+        height: 40px;
+}
 }
