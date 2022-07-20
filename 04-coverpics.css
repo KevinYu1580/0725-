@@ -26,8 +26,13 @@
     background-size: cover;
     background-position: 50% 0%;
 }
+@media screen and (min-width: 768px){
+    .coverpics_mainpic {
+        background-image: linear-gradient(to bottom, rgba(204, 204, 204, 0)68%, #00146e 88%, #00146e), url(images/zh_tw_hero_pc2.jpg);
+}
+}
 
-@media screen and (min-width: 64em) {
+@media screen and (min-width: 1024px) {
     .coverpics_mainpic {
         width: calc(100% - 80px - 80px);
         margin: auto;

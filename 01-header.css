@@ -91,7 +91,7 @@ header .search_icon {
     font-size: 20px;
 }
 
-@media screen and (max-width: 64em){
+@media screen and (max-width: 767px){
     header .search_btn, header .search_icon {
         display: none;
         margin-left: 36px;
