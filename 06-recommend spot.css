@@ -47,14 +47,16 @@
 }
 
 .spots_large {
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.925)), url(images/img_rec_2.jpg);
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.925)), url(images/img_rec_2.jpg) ;
     background-position: 50% 50%;
     background-size: cover;
+    background-repeat: no-repeat;
     display: block;
     height: 230px;
     position: relative;
     margin-bottom: 16px;
 }
+
 @media screen and (min-width: 64em){
     .spots_large {
         height: 100%;
@@ -199,9 +201,19 @@
     width: auto;
     height: auto;
     margin-left: 52px;
+    cursor: pointer;
 }
+.img_wrap:nth-child(2) img{
+    transform-origin: 100% 0;
+    transition: 0.3s;
+}
+.coupon_pc:hover .img_wrap:nth-child(2) img {
+    transform:   rotate(-12deg) ;
+}
+
 @media screen and (max-width: 64em){
     .coupon_pc {
         display: none;
     }
 }
+

@@ -49,9 +49,11 @@
                 <i class="fa-solid fa-globe"></i>
                 <span>Taiwan</span>
             </a>
-            <div class="search_btn">
+            <a class="search_btn" href="">
                 搜尋航班
-            </div>
+            </a>
+
+            
         </div>
 
 
@@ -202,15 +204,20 @@
                     </a>
                 </div>
                 <div class="coupon_pc">
-                    <img src="images/zh_tw_banner_pc1.png" alt="">
-                    <img src="images/zh_tw_banner_pc2.png" alt="">
+                    <div class="img_wrap">
+                        <img src="images/zh_tw_banner_pc1.png" alt="">
+                    </div>
+                    <div class="img_wrap">
+                        <img src="images/zh_tw_banner_pc2.png" alt="">
+                    </div>
                 </div>
-
             </div>
-            <a class="link_btn" href="">
-                <p>查看其他路線</p>
-                <i class="fa-solid fa-angle-right"></i>
-            </a>
+
+        </div>
+        <a class="link_btn" href="">
+            <p>查看其他路線</p>
+            <i class="fa-solid fa-angle-right"></i>
+        </a>
         </div>
         <div class="coupon_mb">
             <img src="images/zh_tw_banner_sp1.png" alt="">
@@ -949,11 +956,11 @@
                     <img src="images/jtp.svg" alt="">
                     <div class="selection">
                         <a href="">
-                            English Page
+                            Japanese Page
                         </a>
                         <span class="tiltline_small">/</span>
                         <a href="">
-                            Japanese Page
+                            English Page
                         </a>
 
                     </div>
@@ -996,35 +1003,45 @@
                             <img src="images/link svg.svg" alt="">
                         </a>
                     </li>
-                    <span class="tiltline_small">/</span>
+                    <span class="tiltline_small">
+                        <span class="for_pc">/</span>
+                    </span>
                     <li>
                         <a href="">
                             隱私政策
                             <img src="images/link svg.svg" alt="">
                         </a>
                     </li>
-                    <span class="tiltline_small">/</span>
+                    <span class="tiltline_small">
+                        <span class="for_pc">/</span>
+                    </span>
                     <li>
                         <a href="">
                             Cookie政策
                             <img src="images/link svg.svg" alt="">
                         </a>
                     </li>
-                    <span class="tiltline_small">/</span>
+                    <span class="tiltline_small">
+                        <span class="for_pc">/</span>
+                    </span>
                     <li>
                         <a href="">
                             服務條款
                             <img src="images/link svg.svg" alt="">
                         </a>
                     </li>
-                    <span class="tiltline_small">/</span>
+                    <span class="tiltline_small">
+                        <span class="for_pc">/</span>
+                    </span>
                     <li>
                         <a href="">
                             建議的系統環境
                             <img src="images/link svg.svg" alt="">
                         </a>
                     </li>
-                    <span class="tiltline_small">/</span>
+                    <span class="tiltline_small">
+                        <span class="for_pc">/</span>
+                    </span>
                     <li>
                         <a href="">
                             ANA SKY WEB
@@ -1054,6 +1071,21 @@
 
     </footer>
 
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="./jquery-3.6.0.min.js"></script>
+    <script>
+        $('.toTheTop').click(function () {
+            $('html, body').animate(
+                { scrollTop: 0 }, 800
+            )
+        })
+
+       
+
+    </script>
 
 </body>
 

@@ -173,17 +173,17 @@ footer .col .title i {
     width: 10.625rem;
 }
 
-@media screen and (min-width: 1024px) {
-    .travelplanner>img {
-        width: 220px;
-    }
-}
+
 @media screen and (min-width: 768px) {
     .travelplanner>img {
         width: 180px;
     }
 }
-
+@media screen and (min-width: 1024px) {
+    .travelplanner>img {
+        width: 220px;
+    }
+}
 .travelplanner .selection a {
     display: flex;
     position: relative;
@@ -230,6 +230,13 @@ footer .col .title i {
         transform: translateY(2px);
     }
 }
+@media screen and (max-width: 767px){
+    .tiltline_small .for_pc {
+        display: none;
+    }
+}
+
+
 
 /* icon wrap */
 
@@ -255,7 +262,7 @@ footer .col .title i {
 
 /* footer nav */
 .bot_nav_wrap {
-    padding: 0px 15px;
+    
     margin-bottom: 30px;
 }
 @media screen and (min-width: 768px){
@@ -268,10 +275,12 @@ footer .col .title i {
 .ul_wrap {
     width: 100%;
     padding-top: 1.25rem;
+    padding-left: 26px;
 }
 @media screen and (min-width: 768px){
     .ul_wrap {
     padding-bottom: 15px;
+    margin: 0;
     }
 }
 .ul_wrap ul {
@@ -305,6 +314,7 @@ footer .col .title i {
     line-height: 1.4;
     color: #666;
     margin-top: 1rem;
+    padding: 0px 15px;
 }
 
 .outside_link_warning img {

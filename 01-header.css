@@ -81,14 +81,27 @@ header .link_wrap {
     }
 }
 header .search_btn {
-    padding: 13px 29px 16px 29px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 44px;
     background-color: #d54100;
     color: #fff;
     margin-left: 36px;
-    font-size: .9375rem
+    font-size: .9375rem;
+    border: none;
+    transition: 0.3s;
+    cursor: pointer;
+    padding-bottom: 2px;
+}
+header .search_btn:hover {
+    background-color: #bb3800;
+    
 }
 header .search_icon {
     font-size: 20px;
+    cursor: pointer;
 }
 
 @media screen and (max-width: 767px){
