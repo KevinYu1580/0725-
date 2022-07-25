@@ -31,18 +31,18 @@
     .special .card {
         width: 33.333333%;
         height: 400px;
-        padding: 0px 4px;
+        padding: 0px ;
     }
 
     .special .card:nth-child(1),
     .special .card:nth-child(4) {
         transform: translateY(15%);
-        padding-left: 0;
+        padding-right: 4px;
     }
     .special .card:nth-child(3),
     .special .card:nth-child(6) {
         transform: translateY(-15%);
-        padding-right: 0;
+        padding-left: 4px;
     }
 }
 
