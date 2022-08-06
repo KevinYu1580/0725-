@@ -73,17 +73,43 @@
 .top_nav_pc .click_wrap {
     display: flex;
 }
+
+
 .top_nav_pc .click_wrap a{
     color: #fff;
     font-size: 1rem;
     margin-right: 50px;
     font-weight: 500;
     letter-spacing: 0.05rem;
+    display: flex;
+    align-items: center;
+}
+
+
+.top_nav_pc .click_wrap p {
+    position: relative;
+    transition: 0.3s;
+}
+.top_nav_pc .click_wrap p::after{
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -12px;
+    background-color: rgb(216, 216, 216);
+    transition: 0.3s;
+    opacity: 1;
+
+}
+.top_nav_pc .click_wrap p:hover::after {
+    width: 100%;
 }
 .top_nav_pc i {
     margin-left: 8px;
     font-size: 14px;
-    transform: translateY(-2px);
+    transform: translateY(1px);
 }
 .top_nav_pc .must_go {
     display: flex;

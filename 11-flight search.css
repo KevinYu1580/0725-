@@ -65,6 +65,7 @@
     width: 100%;
     margin-bottom: 80px;
     margin-top: 78px;
+    cursor: pointer;
 }
 @media screen and (max-width: 1023px){
     .flight_search .banner_pc {
